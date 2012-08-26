@@ -1,4 +1,4 @@
-set nocompatible " be iMproved
+set nocompatible " be lmproved
 filetype off " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -9,8 +9,16 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
+"color theme
 Bundle 'freya'
-
+"智能注释
+"Bundle 'scrooloose/nerdcommenter'
+"markdown语法高亮
+"Bundle 'plasticboy/markdown'
+"nginx 配置文件语法高亮
+"Bundle 'nginx'
+"文件重命名
+Bundle 'renamer'
 
 filetype plugin indent on
 let NERDTreeWinPos = "right" "where NERD tree window is placed on the screen
@@ -34,3 +42,10 @@ set autoindent shiftwidth=2
 set wildmode=list:full
 set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+
+inoremap jk 
+inoremap kj 
+inoremap jj 
+cnoremap jk 
+cnoremap kj 
+cnoremap jj 
