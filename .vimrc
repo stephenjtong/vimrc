@@ -18,7 +18,21 @@ Bundle 'freya'
 "nginx 配置文件语法高亮
 "Bundle 'nginx'
 "文件重命名
-Bundle 'renamer'
+"Bundle 'renamer'
+
+"install snipmate
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "honza/snipmate-snippets"
+"Bundle "garbas/vim-snipmate"
+
+Bundle 'msanders/snipmate.vim'
+Bundle 'kchmck/vim-coffee-script'
+"Bundle 'kchmck/vim-coffee-script'
+
+set vb t_vb=
+"马上跳到搜索匹配
+set incsearch
 
 filetype plugin indent on
 let NERDTreeWinPos = "right" "where NERD tree window is placed on the screen
