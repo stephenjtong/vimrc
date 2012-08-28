@@ -9,6 +9,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
+Bundle 'taglist-plus' 
 "color theme
 Bundle 'freya'
 "智能注释
