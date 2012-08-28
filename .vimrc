@@ -21,12 +21,13 @@ Bundle 'freya'
 "Bundle 'renamer'
 
 "install snipmate
-"Bundle "MarcWeber/vim-addon-mw-utils"
-"Bundle "tomtom/tlib_vim"
-"Bundle "honza/snipmate-snippets"
-"Bundle "garbas/vim-snipmate"
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
 
-Bundle 'msanders/snipmate.vim'
+"Bundle "msanders/snipmate.vim"
+
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'kchmck/vim-coffee-script'
 
