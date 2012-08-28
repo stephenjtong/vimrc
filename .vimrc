@@ -9,6 +9,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
+Bundle 'taglist-plus'
 "color theme
 Bundle 'freya'
 "智能注释
@@ -32,6 +33,7 @@ Bundle 'kchmck/vim-coffee-script'
 "Bundle 'kchmck/vim-coffee-script'
 Bundle 'cscope_plus.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'DoxygenToolkit.vim'
 
 set vb t_vb=
 "马上跳到搜索匹配
@@ -46,16 +48,16 @@ syntax on
 
 filetype on
 filetype plugin indent on
-set enc=utf-8 
-set fenc=utf-8  
-set number  
+set enc=utf-8
+set fenc=utf-8
+set number
 set showmatch
-set ignorecase  
+set ignorecase
 set hlsearch
 set incsearch
-set tabstop=2  
-set cindent shiftwidth=2  
-set autoindent shiftwidth=2 
+set tabstop=2
+set cindent shiftwidth=2
+set autoindent shiftwidth=2
 set wildmode=list:full
 set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
@@ -63,3 +65,4 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 noremap!  jk 
 noremap!  kj 
 noremap!  jj 
+noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
