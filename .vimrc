@@ -30,6 +30,8 @@ Bundle "garbas/vim-snipmate"
 
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'kchmck/vim-coffee-script'
+Bundle 'cscope_plus.vim'
+Bundle 'scrooloose/nerdcommenter'
 
 set vb t_vb=
 "马上跳到搜索匹配
