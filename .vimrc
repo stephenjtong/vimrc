@@ -63,6 +63,4 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 noremap!  jk 
 noremap!  kj 
 noremap!  jj 
-
-nmap <F12> :%s/[ \t\r]\+$//g<CR>gg=G<CR>
-nmap <S-f> :%s/[ \t\r]\+$//g<CR>gg=G<CR>
+noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
