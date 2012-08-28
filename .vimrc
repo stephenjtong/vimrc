@@ -31,6 +31,7 @@ Bundle "garbas/vim-snipmate"
 
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'kchmck/vim-coffee-script'
+Bundle 'DoxygenToolkit.vim'
 
 set vb t_vb=
 "马上跳到搜索匹配
