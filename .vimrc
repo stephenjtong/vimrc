@@ -34,6 +34,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'cscope_plus.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'DoxygenToolkit.vim'
+Bundle 'PDV--phpDocumentor-for-Vim'
 
 set vb t_vb=
 "马上跳到搜索匹配
