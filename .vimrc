@@ -66,3 +66,5 @@ noremap!  jk 
 noremap!  kj 
 noremap!  jj 
 noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
+
+set foldmethod=indent "代码折叠
