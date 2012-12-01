@@ -7,32 +7,32 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'FuzzyFinder'
+Bundle 'jamis/fuzzyfinder_textmate'
 Bundle 'scrooloose/nerdtree'
 Bundle 'taglist-plus'
 "color theme
 Bundle 'freya'
 "智能注释
-"Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdcommenter'
 "markdown语法高亮
 "Bundle 'plasticboy/markdown'
 "nginx 配置文件语法高亮
-"Bundle 'nginx'
+Bundle 'nginx.vim'
 "文件重命名
-"Bundle 'renamer'
+Bundle 'danro/rename.vim'
 
 "install snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "honza/snipmate-snippets"
+"Bundle "garbas/vim-snipmate"
 
-"Bundle "msanders/snipmate.vim"
+Bundle "msanders/snipmate.vim"
 
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'kchmck/vim-coffee-script'
 Bundle 'cscope_plus.vim'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'DoxygenToolkit.vim'
 
 set vb t_vb=
@@ -40,7 +40,9 @@ set vb t_vb=
 set incsearch
 
 filetype plugin indent on
+"nerd tree shortcut
 let NERDTreeWinPos = "right" "where NERD tree window is placed on the screen
+let NERDTreeShowHidden=1
 nmap <F7> <ESC>:NERDTreeToggle<RETURN>" Open and close the NERD_tree.vim separately
 filetype indent on
 colo freya
