@@ -25,6 +25,8 @@ Bundle 'Impact'
 Bundle 'matrix.vim'
 Bundle 'vibrantink'
 Bundle 'vividchalk.vim'
+Bundle 'candy.vim'
+Bundle 'Lokaltog/vim-powerline'
 "colo freya
 "colo railscasts
 colo jellybeans
@@ -89,4 +91,13 @@ noremap!  kj 
 noremap!  jj 
 noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
 
+
 set foldmethod=indent "代码折叠
+
+"powerline{
+" Always display a status line at the bottom of the window
+set laststatus=2
+set guifont=PowerlineSymbols\ for\ Powerline
+set t_Co=256
+"let g:Powerline_symbols = 'fancy'
+"}
