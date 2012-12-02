@@ -8,7 +8,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-map <leader>f :FufFile **/<CR> 
+map <leader>f :FufFile **/<CR>
 "map <leader>f :FufTaggedFile<CR>
 map <leader>g :FufTag<CR>
 map <leader>b :FufBuffer<CR>
@@ -25,6 +25,8 @@ Bundle 'Impact'
 Bundle 'matrix.vim'
 Bundle 'vibrantink'
 Bundle 'vividchalk.vim'
+Bundle 'candy.vim'
+Bundle 'Lokaltog/vim-powerline'
 "colo freya
 "colo railscasts
 colo jellybeans
@@ -90,4 +92,18 @@ noremap!  kj 
 noremap!  jj 
 noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
 
+
 set foldmethod=indent "代码折叠
+
+"powerline{
+" Always display a status line at the bottom of the window
+set laststatus=2
+set guifont=PowerlineSymbols\ for\ Powerline
+set t_Co=256
+"let g:Powerline_symbols = 'fancy'
+"}
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
