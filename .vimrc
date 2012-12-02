@@ -8,31 +8,49 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+map <leader>f :FufFile **/<CR> 
+"map <leader>f :FufTaggedFile<CR>
+map <leader>g :FufTag<CR>
+map <leader>b :FufBuffer<CR>
+Bundle 'jamis/fuzzyfinder_textmate'
 Bundle 'scrooloose/nerdtree'
 Bundle 'taglist-plus'
 "color theme
 Bundle 'freya'
+Bundle 'jgdavey/vim-railscasts'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'matthewtodd/vim-twilight'
+Bundle 'desert256.vim'
+Bundle 'Impact'
+Bundle 'matrix.vim'
+Bundle 'vibrantink'
+Bundle 'vividchalk.vim'
+"colo freya
+"colo railscasts
+colo jellybeans
+"colo matrix
+"colo twilight
+"colo impact
 "智能注释
-"Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdcommenter'
 "markdown语法高亮
 "Bundle 'plasticboy/markdown'
 "nginx 配置文件语法高亮
-"Bundle 'nginx'
+Bundle 'nginx.vim'
 "文件重命名
-"Bundle 'renamer'
+Bundle 'danro/rename.vim'
 
 "install snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "honza/snipmate-snippets"
+"Bundle "garbas/vim-snipmate"
 
-"Bundle "msanders/snipmate.vim"
+Bundle "msanders/snipmate.vim"
 
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'kchmck/vim-coffee-script'
 Bundle 'cscope_plus.vim'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'DoxygenToolkit.vim'
 Bundle 'PDV--phpDocumentor-for-Vim'
 
@@ -41,10 +59,13 @@ set vb t_vb=
 set incsearch
 
 filetype plugin indent on
+"nerd tree shortcut
 let NERDTreeWinPos = "right" "where NERD tree window is placed on the screen
-nmap <F7> <ESC>:NERDTreeToggle<RETURN>" Open and close the NERD_tree.vim separately
+let NERDTreeShowHidden=1
+let g:NERDTreeChDirMode=2 "open at current directory
+noremap <F7> <ESC>:NERDTreeFind<RETURN>
+noremap <F8> <ESC>:NERDTreeToggle<RETURN>" Open and close the NERD_tree.vim separately
 filetype indent on
-colo freya
 syntax on
 
 filetype on
@@ -62,8 +83,11 @@ set autoindent shiftwidth=2
 set wildmode=list:full
 set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+"set autochdir "set the working directory to the current file
 
 noremap!  jk 
 noremap!  kj 
 noremap!  jj 
 noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
+
+set foldmethod=indent "代码折叠
