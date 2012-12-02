@@ -8,7 +8,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-map <leader>f :FufFile **/<CR> 
+map <leader>f :FufFile **/<CR>
 "map <leader>f :FufTaggedFile<CR>
 map <leader>g :FufTag<CR>
 map <leader>b :FufBuffer<CR>
@@ -101,3 +101,8 @@ set guifont=PowerlineSymbols\ for\ Powerline
 set t_Co=256
 "let g:Powerline_symbols = 'fancy'
 "}
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
