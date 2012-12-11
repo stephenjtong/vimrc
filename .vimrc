@@ -87,8 +87,6 @@ set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 "set autochdir "set the working directory to the current file
 
-noremap!  jk 
-noremap!  kj 
 noremap!  jj 
 noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
 
