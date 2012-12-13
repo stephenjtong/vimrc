@@ -1,5 +1,5 @@
 set nocompatible " be lmproved
-filetype off " required!
+filetype on 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -14,6 +14,7 @@ map <leader>g :FufTag<CR>
 map <leader>b :FufBuffer<CR>
 Bundle 'jamis/fuzzyfinder_textmate'
 Bundle 'scrooloose/nerdtree'
+Bundle 'taglist.vim'
 Bundle 'taglist-plus'
 "color theme
 Bundle 'freya'
@@ -105,3 +106,8 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Use_Left_Window = 1         "在右侧窗口中显示taglist窗口 
+let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
