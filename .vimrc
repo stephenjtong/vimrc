@@ -29,6 +29,7 @@ Bundle 'vibrantink'
 Bundle 'vividchalk.vim'
 Bundle 'candy.vim'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'AutoComplPop'
 "colo freya
 "colo railscasts
 colo jellybeans
@@ -61,6 +62,10 @@ Bundle 'PDV--phpDocumentor-for-Vim'
 set vb t_vb=
 "马上跳到搜索匹配
 set incsearch
+
+"AutoComplPop
+let g:AutoComplPop_IgnoreCaseOption=1
+let g:acp_behaviorKeywordCommand="\<C-x>\<C-o>"
 
 filetype plugin indent on
 "nerd tree shortcut
