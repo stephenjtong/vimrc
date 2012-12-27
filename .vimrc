@@ -8,7 +8,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-map <leader>f :FufFile **/<CR>
+"map <leader>f :FufFile **/<CR>
+map <leader>f :FufCoverageFile<CR>
 "map <leader>f :FufTaggedFile<CR>
 map <leader>g :FufTag<CR>
 map <leader>b :FufBuffer<CR>
@@ -86,6 +87,7 @@ set autoindent shiftwidth=2
 set wildmode=list:full
 set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+set autoread 
 "set autochdir "set the working directory to the current file
 
 noremap!  jj 
