@@ -1,4 +1,5 @@
 set nocompatible " be lmproved
+
 filetype on 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -86,9 +87,10 @@ set showmatch
 set ignorecase
 set hlsearch
 set incsearch
-set tabstop=2
-set cindent shiftwidth=2
-set autoindent shiftwidth=2
+set tabstop=4
+set cindent shiftwidth=4
+set autoindent shiftwidth=4
+set expandtab
 set wildmode=list:full
 set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
@@ -99,7 +101,7 @@ noremap!  jj 
 noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
 
 
-set foldmethod=indent "代码折叠
+"set foldmethod=indent "代码折叠
 
 "powerline{
 " Always display a status line at the bottom of the window
