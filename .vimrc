@@ -65,8 +65,8 @@ set vb t_vb=
 set incsearch
 
 "AutoComplPop
-let g:AutoComplPop_IgnoreCaseOption=1
-let g:acp_behaviorKeywordCommand="\<C-x>\<C-o>"
+"let g:AutoComplPop_IgnoreCaseOption=1
+"let g:acp_behaviorKeywordCommand="\<C-x>\<C-o>"
 
 filetype plugin indent on
 "nerd tree shortcut
