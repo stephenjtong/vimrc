@@ -82,6 +82,7 @@ filetype on
 filetype plugin indent on
 set enc=utf-8
 set fenc=utf-8
+set nobomb
 set number
 set showmatch
 set ignorecase
