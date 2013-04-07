@@ -125,3 +125,6 @@ let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
 "open ctags in new tab / virtical
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+au BufRead,BufNewFile *.ru setfiletype ruby
+au BufRead,BufNewFile *.erb setfiletype html
