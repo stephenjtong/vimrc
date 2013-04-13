@@ -31,6 +31,8 @@ Bundle 'vividchalk.vim'
 Bundle 'candy.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'AutoComplPop'
+"algin equal text
+Bundle 'godlygeek/tabular'
 "colo freya
 "colo railscasts
 colo jellybeans
