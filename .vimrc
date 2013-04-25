@@ -84,6 +84,7 @@ filetype on
 filetype plugin indent on
 set enc=utf-8
 set fenc=utf-8
+set nobomb
 set number
 set showmatch
 set ignorecase
@@ -122,3 +123,10 @@ let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只�
 let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Left_Window = 1         "在右侧窗口中显示taglist窗口 
 let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
+
+"open ctags in new tab / virtical
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+au BufRead,BufNewFile *.ru setfiletype ruby
+au BufRead,BufNewFile *.erb setfiletype html
