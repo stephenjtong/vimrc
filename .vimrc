@@ -131,3 +131,7 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 au BufRead,BufNewFile *.ru setfiletype ruby
 au BufRead,BufNewFile *.erb setfiletype html
 au BufRead,BufNewFile *.phtml setfiletype html
+
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
