@@ -101,7 +101,7 @@ set autoread
 "set autochdir "set the working directory to the current file
 
 noremap!  jj 
-noremap ff :%s/[ \t\r]\+$//g<CR>gg=G<CR>
+noremap <C-f> :%s/[ \t\r]\+$//g<CR>gg=G<CR>
 
 
 "set foldmethod=indent "代码折叠
