@@ -77,6 +77,8 @@ let NERDTreeShowHidden=1
 let g:NERDTreeChDirMode=2 "open at current directory
 noremap <F7> <ESC>:NERDTreeFind<RETURN>
 noremap <F8> <ESC>:NERDTreeToggle<RETURN>" Open and close the NERD_tree.vim separately
+map j gj
+map k gk
 filetype indent on
 syntax on
 
