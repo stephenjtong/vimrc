@@ -1,9 +1,14 @@
 set nocompatible " be lmproved
 
-filetype on 
+filetype on
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'AutoClose'
+"Bundle 'Valloric/YouCompleteMe'
+Bundle 'ShowTrailingWhitespace'
+Bundle 'EasyMotion'
+Bundle 'The-NERD-Commenter'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
@@ -87,7 +92,7 @@ filetype plugin indent on
 set enc=utf-8
 set fenc=utf-8
 set nobomb
-set number
+set rnu
 set showmatch
 set ignorecase
 set hlsearch
@@ -99,7 +104,7 @@ set expandtab
 set wildmode=list:full
 set wildmenu
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
-set autoread 
+set autoread
 "set autochdir "set the working directory to the current file
 
 noremap!  jj 
@@ -125,7 +130,7 @@ map <F11> :windo set wrap<CR>
 
 let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
 let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
-let Tlist_Use_Left_Window = 1         "在右侧窗口中显示taglist窗口 
+let Tlist_Use_Left_Window = 1         "在右侧窗口中显示taglist窗口
 let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
 
 "open ctags in new tab / virtical
