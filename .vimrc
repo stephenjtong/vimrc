@@ -125,6 +125,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <F11> :windo set wrap<CR>
+au VimEnter * if &diff | execute 'windo set wrap' | endif
 
 
 let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
