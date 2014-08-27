@@ -13,13 +13,18 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
-Bundle 'FuzzyFinder'
-"map <leader>f :FufFile **/<CR>
-map <leader>f :FufCoverageFile<CR>
-"map <leader>f :FufTaggedFile<CR>
-map <leader>g :FufTag<CR>
-map <leader>b :FufBuffer<CR>
-Bundle 'jamis/fuzzyfinder_textmate'
+
+Bundle 'ctrlp.vim'
+noremap <C-W><C-U> :CtrlPMRU<CR>
+nnoremap <C-W>u :CtrlPMRU<CR>
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|.rvm$'
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_match_window_bottom=1
+let g:ctrlp_max_height=15
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_mruf_max=500
+let g:ctrlp_follow_symlinks=1
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'taglist.vim'
 Bundle 'taglist-plus'
@@ -154,3 +159,5 @@ set viminfo='10,\"100,:20,%,n~/.viminfo'
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+set clipboard=unnamed " all vim sessions will be sharing the same X selection buffer
