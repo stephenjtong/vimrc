@@ -161,4 +161,4 @@ if has("autocmd")
 endif
 
 set clipboard=unnamed " all vim sessions will be sharing the same X selection buffer
-noremap <C-m> :! open %<CR><CR>
+nnoremap <C-n> :! open %<CR><CR>
