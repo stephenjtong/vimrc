@@ -4,7 +4,7 @@ filetype on
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'AutoClose'
+"Bundle 'AutoClose'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'ShowTrailingWhitespace'
 Bundle 'EasyMotion'
