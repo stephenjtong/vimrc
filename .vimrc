@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
+Bundle 'mileszs/ack.vim'
 
 Bundle 'ctrlp.vim'
 noremap <C-W><C-U> :CtrlPMRU<CR>
@@ -97,7 +98,7 @@ filetype plugin indent on
 set enc=utf-8
 set fenc=utf-8
 set nobomb
-set rnu
+"set rnu
 set showmatch
 set ignorecase
 set hlsearch
@@ -162,3 +163,4 @@ endif
 
 set clipboard=unnamed " all vim sessions will be sharing the same X selection buffer
 nnoremap <C-n> :! open %<CR><CR>
+map <F4> :Ack -i 
