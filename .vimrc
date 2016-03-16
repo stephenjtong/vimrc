@@ -30,10 +30,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'taglist.vim'
 Bundle 'taglist-plus'
 "color theme
-Bundle 'freya'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Bundle 'jgdavey/vim-railscasts'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'matthewtodd/vim-twilight'
+Bundle 'tomasr/molokai'
+Bundle 'Wombat'
 Bundle 'desert256.vim'
 Bundle 'Impact'
 Bundle 'matrix.vim'
@@ -44,12 +45,9 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'AutoComplPop'
 "algin equal text
 Bundle 'godlygeek/tabular'
-"colo freya
+colorscheme Tomorrow-Night-Eighties
 "colo railscasts
-colo jellybeans
-"colo matrix
-"colo twilight
-"colo impact
+"colo wombat
 "智能注释
 Bundle 'scrooloose/nerdcommenter'
 "markdown语法高亮
